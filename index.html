@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--AOS Link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--css link-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+</head>
+<body>
+
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <!--SECTION1-->
+
+    <div class="container" id="home">
+        
+        <!--navbar-->
+        
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo"><a href="">ASTRO LITERASI</a></h1>
+
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500"  href="index.html">HOME</a>
+                <a data-aos="fade-down" data-aos-duration="2000"  href="index2.html">MATERI</a>
+                <a data-aos="fade-down" data-aos-duration="2500"  href="index3.html">SIMULASI</a>
+            </nav>
+
+        </header>
+
+        <!--CONTENT-->
+        
+        <main>
+            <div class="content">
+                
+                <div 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="1500"          
+                class="tag-box">
+                    <div class="tag">PENGENALAN &wedbar;</div>
+                </div>
+
+                <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="1500"
+                >LUAR ANGKASA</h1>
+
+                <p 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="2000"
+
+                class="description">Beragam planet di Tata Surya telah diamati, dikaji, dan dipelajari untuk mengungkap asal-usul serta keunikannya masing-masing. Dari panasnya permukaan Venus hingga badai besar di Jupiter, setiap planet menyimpan cerita luar biasa yang terus diteliti hingga hari ini.
+                </p>
+
+                <div
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="2500"
+
+                class="button">
+                    <a href="index2.html" class="btn-start">START</a>
+                </div>
+                
+                <div
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="2500"
+
+                class="button">
+                    <a href="index3.html" class="btn-start">SIMULASI</a>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="robot-contain">
+            <spline-viewer 
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="1500"
+
+            class="robot-3d" url="https://prod.spline.design/h2edsGfxXnxV770Y/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+
+
+
+    
+
+    <!--JS LINK-->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.92/build/spline-viewer.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

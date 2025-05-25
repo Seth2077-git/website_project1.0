@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--link css-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sec5-style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+
+<!---------------------------------section5------------------------------>
+    <div id="simulasi" class="container">
+
+        <!--navbar-->
+        
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo"><a href="">ASTROKIDS</a></h1>
+
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500"  href="index.html">HOME</a>
+                <a data-aos="fade-down" data-aos-duration="2000"  href="index2.html">MATERI</a>
+                <a data-aos="fade-down" data-aos-duration="2500"  href="index3.html">SIMULASI</a>
+            </nav>
+        </header>
+
+        <!--content-->
+        
+        <div class="solar-system-container">
+            <h1 class="text-content">ASTRO LITERASI SIMULASI</h1>
+            <div class="solar-system" id="solarSystem">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search planets...">
+                    <div id="autocompleteResults" class="autocomplete-results"></div>
+                </div>
+
+                <div class="shooting-star"></div>
+
+                <div class="sun"></div>
+
+                <div class="planet-info" id="planetInfo" style="display: none;"></div>
+
+                <div class="focused-planet-info" id="focusedPlanetInfo" style="display: none;">
+                    <h2 id="focusedPlanetName"></h2>
+                    <p id="focusedPlanetDescription"></p>
+                    <button onclick="handlePlanetClick(null)">Return to Solar System</button>
+                </div>
+
+                <button class="solar-system-facts-button" onclick="toggleSolarSystemFacts()">
+                    Solar System Facts
+                </button>
+            </div>
+
+            <div id="solarSystemFacts" class="solar-system-facts" style="display: none;">
+                <div id="factsDragHandle" class="facts-drag-handle">
+                    Solar System Facts
+                    <button id="closeFactsButton" class="close-button">×</button>
+                </div>
+                <ul>
+                    <li>The Solar System formed about 4.6 billion years ago.</li>
+                    <li>It consists of the Sun, 8 planets, dwarf planets, and various small bodies.</li>
+                    <li>The Sun contains 99.86% of the Solar System's known mass.</li>
+                    <li>The four inner planets are called terrestrial planets.</li>
+                    <li>The four outer planets are called gas giants.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--link js-->
+        <script src="js/simulation.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
