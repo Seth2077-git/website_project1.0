@@ -1,0 +1,146 @@
+.video-body {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    height: fit-content;
+    background: url(image/backgroundimg2.jpg) center/cover no-repeat;
+    margin: 0;
+}
+
+.video-container iframe {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.card-content, .game-card {
+    background-color: rgb(153, 152, 152);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card-content h1, .game-card .text-content {
+    font-weight: 600;
+    color: rgb(189, 116, 21);
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: rgb(51, 91, 223);
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background-color: rgb(172, 247, 172);
+}
+
+.incorrect {
+    background-color: rgb(215, 139, 139);
+}
+
+.game-card .game-iframe {
+    margin: 20px 0; 
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    aspect-ratio: 1; /* Changed to 1 for a square aspect ratio */
+}
+
+
+
+.char-img1, .char-img2{
+    width: 500px;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.char-img1{
+    right: 100px;
+}
+.char-img2{
+    left: 100px;
+}
+
+.char-img1:hover, .char-img2:hover{
+    bottom: -10px;
+}
+
+
+@media (max-width: 1300px) {
+    .video-body {
+        padding: 15px;
+    }
+    .video-container {
+        max-width: 90%;
+    }
+    .card-content, .game-card {
+        padding: 30px;
+    }
+    .quiz h2 {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 8px;
+    }
+    #next-btn {
+        width: 120px;
+    }
+}
