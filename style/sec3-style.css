@@ -61,6 +61,12 @@
     letter-spacing: 1px;
 }
 
+.list-deskripsi{
+    margin-left: 50px; 
+    margin-top: 5px; 
+    color: white;
+}
+
 .mini-astr{
     width: 200px;
     position: relative;
